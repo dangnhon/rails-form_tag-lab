@@ -10,7 +10,8 @@ class StudentsController < ApplicationController
 
   def new 
     @student = Student.new
-    
+    # in the new.html.erb form file, the user inputted data will be stored in params[:student][:first_name] hash and 
+    # also a params[:student][:last_name]. This is how you can access and use it as arguments. 
   end 
 
   def create 
